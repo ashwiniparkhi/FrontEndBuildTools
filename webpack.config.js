@@ -9,8 +9,14 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader']
       },
+      {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                loader: 'style!css'
+            }
       ]
     },
+    watch:true,
     output: {
         path: path.resolve(__dirname, './dist/'),
         filename: 'bundle.js',
