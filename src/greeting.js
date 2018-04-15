@@ -1,4 +1,4 @@
-var greeting = function(name) {
+let greeting = function(name) {
   return 'Hello '+ name + ', nice to meet you!';
 }
-module.exports =  greeting;
+export default greeting;

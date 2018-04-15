@@ -1,7 +1,7 @@
-var greeting = require('./greeting');
+import greeting from './greeting';
 
-var displayMessage = function() {
-  var greet = greeting('ashwini');
+let displayMessage = function() {
+  let greet = greeting('ashwini');
   return 'Hi' + greet;
 }
-module.exports = displayMessage;
+export default displayMessage;

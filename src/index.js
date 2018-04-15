@@ -1,4 +1,4 @@
-var displayMessage = require('./displayMessage')
-var message = displayMessage();
+import displayMessage from './displayMessage';
+let message = displayMessage();
 console.log('Hello world!');
 console.log(message);
