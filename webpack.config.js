@@ -1,7 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
 module.exports = {
-    entry: './src/index.js',
     module:{
       rules:[
         {
@@ -17,9 +16,4 @@ module.exports = {
       ]
     },
     watch:true,
-    output: {
-        path: path.resolve(__dirname, './dist/'),
-        filename: 'bundle.js',
-         publicPath: 'dist/'
-    }
 }
